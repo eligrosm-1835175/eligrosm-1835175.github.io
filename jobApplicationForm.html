@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Job Application</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<h2>Create an Account</h2>
+<p>&nbsp;</p>
+
+<form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset class="form-horizontal" >
+		<legend>Email and Password</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Email</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Password</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Repeat password</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="repeat_password">
+			</div>
+		</div>
+        <div class="form-group">
+			<label class="col-sm-3 control-label">Pin number:</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="pin">
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Other information</legend>
+		<div class="form-group row">
+            <label class="col-sm-12 control-label">Are you a citizen of the United States?</label>
+            <div class="col-sm-offset-1 col-sm-11">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="legal" value="yes">Yes
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="legal" value="no">No
+                    </label>
+                </div>
+            </div>
+            <label class="col-sm-3 control-label">What is your employment status?</label>
+			<div class="col-sm-9">
+				<select class="form-control" name="state">
+					<option value="" selected="true">Choose a Status</option>
+					<option value="AL">Employed</option>
+					<option value="AK">Unemployed</option>
+					<option value="AZ">Student</option>
+
+				</select>
+			</div>
+
+			<label class="col-sm-12 control-label">What kind of position(s) do you work in?</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_pt" value="parttime">
+						Part time
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_ft" value="fulltime">
+						Full time
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_sl" value="unemployed">
+						Unemployed
+					</label>
+				</div>
+			</div>
+		</div>
+		
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Biography</legend>
+		<div class="form-group">
+			<label class="control-label">Wirte a biography</label>
+			<textarea class="form-control" name="biography" rows="6"></textarea>
+		</div>
+
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+
+	<p>&nbsp;</p>
+
+</form>
+</div><!-- close .container -->
+</body>
+</html>
